@@ -55,6 +55,7 @@
         "plugins/typescript",
         "plugins/typescript/example",
         "plugins/project-files",
+        "examples/typeorm",
         "examples/basics",
         "examples/simple",
         "examples/custom-head",

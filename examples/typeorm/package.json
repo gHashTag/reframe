@@ -1,4 +1,7 @@
 {
+  "name": "_example-typeorm",
+  "private": true,
+  "version": "0.1.14",
   "scripts": {
     "dev": "reframe dev",
     "production": "npm run build && npm run start",
@@ -14,5 +17,8 @@
     "ts-node": "^7.0.0",
     "typeorm": "^0.2.7",
     "typescript": "^3.0.1"
+  },
+  "checkDeps": {
+    "skip": true
   }
 }

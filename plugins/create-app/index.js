@@ -2,9 +2,9 @@ module.exports = {
     $name: require('./package.json').name,
     cliCommands: [
         {
-            name: 'create',
+            name: 'create-app',
             param: '[starter] [project-directory]',
-            description: 'Create a new Reframe project.',
+            description: 'Create a new Reframe app.',
             options: [
                 {
                     name: "--skip-npm",
@@ -106,10 +106,10 @@ async function scaffoldProject({starter, projectRootDir, projectRootDir__pretty}
 
     await fs.copy(starterPath, projectRootDir);
 
-    await lopOffPackageJson(projectRootDir);
+    await adaptPackageJson(projectRootDir);
 }
 
-async function lopOffPackageJson(projectRootDir) {
+async function adaptPackageJson(projectRootDir) {
     const fs = require('fs-extra');
     const pathModule = require('path');
 
@@ -137,7 +137,7 @@ function printUsageExample() {
     const {indent} = require('@brillout/cli-theme');
 
     console.log(indent+'For example:');
-    console.log(indent+indent+'reframe create react-server my-app');
+    console.log(indent+indent+'reframe create react-frontend my-app');
 }
 
 

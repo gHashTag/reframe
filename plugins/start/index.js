@@ -6,13 +6,13 @@ module.exports = {
 function getCliCommands() {
     const optLog = {
         name: "-l, --log",
-        description: "Print build and page information.",
+        description: "Print build information.",
     };
 
     return [
         {
             name: 'dev',
-            description: 'Build pages and start server for development.',
+            description: 'Build and serve app for development.',
             options: [
                 optLog,
             ],
@@ -20,7 +20,7 @@ function getCliCommands() {
         },
         {
             name: 'build',
-            description: 'Build pages for production.',
+            description: 'Build app for production.',
             options: [
                 optLog,
                 {
@@ -32,7 +32,7 @@ function getCliCommands() {
         },
         {
             name: 'server',
-            description: 'Start server for production.',
+            description: 'Serve app for production.',
             options: [
                 {
                     name: "-d, --dev",

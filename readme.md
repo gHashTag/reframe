@@ -141,7 +141,7 @@ Designed for high development speed with no sacrifice on flexibility.
 
 Assembles a JavaScript stack with integrations for Node.js servers (Express, Koa, Hapi), Node.js ORMs (TypeORM & more to come), React, React Router, React Native Web, Vue.js, TypeScript, PostCSS, etc.
 
-All stacks are supported:
+All stacks supported:
 <br/> &nbsp; &#8226; &nbsp; frontend + backend + database/ORM (aka full-stack)
 <br/> &nbsp; &#8226; &nbsp; frontend + backend (aka SSR)
 <br/> &nbsp; &#8226; &nbsp; frontend only (aka static site)

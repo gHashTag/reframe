@@ -164,7 +164,7 @@ For other starters, see the [list of starters](/../../#getting-started).
 
 2. Initialize a new Reframe app.
    ~~~shell
-   $ reframe create react-server my-app
+   $ reframe init react-server my-app
    ~~~
    A `my-app/` directory is created and populated with a scaffold.
 
